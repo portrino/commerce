@@ -103,7 +103,7 @@ class Tx_Commerce_Controller_InvoiceController extends Tx_Commerce_Controller_Ba
 
 		// If it's an automated process, no caching
 		if ($_SERVER['REMOTE_ADDR'] == $_SERVER['SERVER_ADDR']) {
-			$$frontend->set_no_cache();
+			$frontend->set_no_cache();
 		}
 
 		// Lets make this multilingual, eh?
